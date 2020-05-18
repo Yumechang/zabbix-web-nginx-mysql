@@ -1,4 +1,4 @@
-FROM zabbix/zabbix-web-nginx-mysql:alpine-latest
+FROM zabbix/zabbix-web-nginx-mysql:alpine-5.0-latest
 ADD msjh.ttf /usr/share/zabbix/assets/fonts/
 USER root
 RUN apk update && apk upgrade && apk add curl tzdata && rm -r /var/cache/apk/* && \
